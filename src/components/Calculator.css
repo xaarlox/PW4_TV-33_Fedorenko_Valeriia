@@ -1,0 +1,128 @@
+.calculator-container {
+    min-width: 30rem;
+    max-width: 80rem; 
+    background-color: white;
+    padding: 1.5rem;
+    box-shadow: 0 0 5px darkgoldenrod;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.calculator-container form {
+    margin-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.form-group select {
+    height: 2.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid darkgoldenrod;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+}
+
+.form-group label {
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    font-size: 1.1rem;
+}
+
+.form-group input {
+    height: 2.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid darkgoldenrod;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+}
+
+.calculator-container button {
+    padding: 0.8rem 1rem;
+    background-color: darkorange;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    grid-column: 1 / -1;
+    width: 25%;
+    margin: 0.5rem auto 0;
+    min-width: 160px;
+}
+
+.calculator-container button:hover {
+    background-color: darkgoldenrod
+}
+
+.results-container {
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+.formula {
+    font-style: italic;
+    padding: 0.5rem 0.75rem;
+    background-color: rgb(248, 241, 225);
+    border-left: 4px solid darkgoldenrod;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    font-size: 1.05rem;
+}
+
+.output-value {
+    font-weight: bold;
+    background-color: rgb(248, 241, 225);
+    padding: 0.2rem 0.4rem;
+    border-radius: 5px;
+}
+
+.stability-result {
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.3rem 0.5rem;
+    border-radius: 6px;
+    margin-top: 0.3rem;
+    font-size: 1.05rem;
+}
+
+.stability-result.success {
+    background-color: #eafbe7;
+    color: green;
+}
+
+.stability-result.fail {
+    background-color: #fbeaea;
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .result-item {
+        font-size: 1.1rem;
+        padding: 0.5rem;
+    }
+
+    table {
+        font-size: 1rem;
+    }
+
+    th, td {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+}
